@@ -33,6 +33,9 @@ Jaringan lokal (LAN) atau konfigurasi jaringan yang memungkinkan klien dan serve
    - Kirim dan Terima Pesan: Klien dapat mengirim pesan ke server, yang kemudian akan menyiarkan pesan tersebut ke klien lain.
    - Keluar dari Chat: Klien dapat keluar dari chat dengan mengirim pesan "exit". Server akan mencatat pemutusan dan menghapus klien dari daftar aktif.
 
+# Link Youtube
+https://youtu.be/YMEa-tXInXc
+
 # Struktur Kode
 server.py: Mengatur fungsi server untuk menerima dan menyiarkan pesan serta menangani pemutusan koneksi.
 client.py: Mengatur koneksi klien ke server, mengirim pesan, dan menampilkan pesan yang diterima.
@@ -40,3 +43,7 @@ client.py: Mengatur koneksi klien ke server, mengirim pesan, dan menampilkan pes
 # Catatan Tambahan
 Pastikan untuk menjalankan server.py terlebih dahulu sebelum menjalankan client.py.
 Aplikasi ini menggunakan protokol UDP, yang berarti tidak ada jaminan pengiriman atau urutan pesan yang tepat. Hal ini sesuai untuk chatroom sederhana tetapi mungkin tidak cocok untuk aplikasi yang membutuhkan reliabilitas tinggi.
+
+# Contributor
+- Naila Selvira Budiana 18223018
+- Wijaksara Aptaluhung 18223088
