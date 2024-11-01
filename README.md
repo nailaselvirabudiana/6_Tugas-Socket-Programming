@@ -5,8 +5,11 @@ Aplikasi ini terdiri dari dua file utama: server.py untuk menjalankan server yan
 Persyaratan
 Python 3.x
 Jaringan lokal (LAN) atau konfigurasi jaringan yang memungkinkan klien dan server untuk saling berkomunikasi menggunakan UDP.
-Cara Penggunaan
-1. Server
+
+# Cara Penggunaan
+
+1. Server:
+
 Langkah-Langkah Menjalankan Server
 Buka terminal.
 Jalankan file server.py
@@ -19,7 +22,8 @@ Broadcast Pesan: Pesan yang diterima dari klien akan dicatat dan disiarkan ke se
 Log dan Hapus Klien: Jika klien mengirimkan pesan "exit", server akan mencatat pemutusan dan menghapus klien dari daftar.
 Log jika Pengiriman Gagal: Server akan mencatat pemutusan koneksi jika terjadi kegagalan saat mengirim pesan ke klien.
 
-2. Client
+2. Client:
+
 Langkah-Langkah Menjalankan Klien
 Buka terminal.
 
