@@ -9,38 +9,34 @@ Jaringan lokal (LAN) atau konfigurasi jaringan yang memungkinkan klien dan serve
 # Cara Penggunaan
 
 1. Server:
+   
+   Langkah-Langkah Menjalankan Server:
+   - Buka terminal.
+   - Jalankan file server.py dengan cara mengetikkan "python server.py" pada terminal yang sama dengan disimpannya file server.py.
+   - Server akan mulai mendengarkan pesan dari klien pada alamat IP dan port yang ditentukan di dalam script.
 
-Langkah-Langkah Menjalankan Server
-Buka terminal.
-Jalankan file server.py
-python server.py
-Server akan mulai mendengarkan pesan dari klien pada alamat IP dan port yang ditentukan di dalam script.
-
-Fungsi Utama
-Menerima Pesan: Server akan menerima pesan dari setiap klien yang terhubung.
-Broadcast Pesan: Pesan yang diterima dari klien akan dicatat dan disiarkan ke semua klien lain yang aktif.
-Log dan Hapus Klien: Jika klien mengirimkan pesan "exit", server akan mencatat pemutusan dan menghapus klien dari daftar.
-Log jika Pengiriman Gagal: Server akan mencatat pemutusan koneksi jika terjadi kegagalan saat mengirim pesan ke klien.
+   Fungsi Utama
+   Menerima Pesan: Server akan menerima pesan dari setiap klien yang terhubung.
+   Broadcast Pesan: Pesan yang diterima dari klien akan dicatat dan disiarkan ke semua klien lain yang aktif.
+   Log dan Hapus Klien: Jika klien mengirimkan pesan "exit", server akan mencatat pemutusan dan menghapus klien dari daftar.
 
 2. Client:
 
-Langkah-Langkah Menjalankan Klien
-Buka terminal.
+   Langkah-Langkah Menjalankan Klien
+   - Buka terminal.
+   - Jalankan file client.py dengan cara mengetikkan "python client.py" pada terminal yang sama dengan disimpannya file client.py.
+   - _Client_ akan meminta alamat IP dan nomor port dari server untuk melakukan koneksi.
+   - Setelah terhubung, _client_ dapat mengirim pesan yang akan disiarkan ke _client_ lain yang terhubung ke _server_ yang sama.
+   - Jika _client_ mengirim pesan "exit", _client_ akan memutuskan koneksi dari _server_.
 
-Jalankan file client.py 
-python client.py
-Klien akan meminta alamat IP dan nomor port dari server untuk melakukan koneksi.
+    Fungsi Utama
+    Kirim dan Terima Pesan: Klien dapat mengirim pesan ke server, yang kemudian akan menyiarkan pesan tersebut ke klien lain.
+    Keluar dari Chat: Klien dapat keluar dari chat dengan mengirim pesan "exit". Server akan mencatat pemutusan dan menghapus klien dari daftar aktif.
 
-Setelah terhubung, klien dapat mengirim pesan yang akan disiarkan ke klien lain yang terhubung ke server yang sama.
-
-Jika klien mengirim pesan "exit", klien akan memutuskan koneksi dari server.
-
-Fungsi Utama
-Kirim dan Terima Pesan: Klien dapat mengirim pesan ke server, yang kemudian akan menyiarkan pesan tersebut ke klien lain.
-Keluar dari Chat: Klien dapat keluar dari chat dengan mengirim pesan "exit". Server akan mencatat pemutusan dan menghapus klien dari daftar aktif.
-Struktur Kode
+# Struktur Kode
 server.py: Mengatur fungsi server untuk menerima dan menyiarkan pesan serta menangani pemutusan koneksi.
 client.py: Mengatur koneksi klien ke server, mengirim pesan, dan menampilkan pesan yang diterima.
-Catatan Tambahan
+
+# Catatan Tambahan
 Pastikan untuk menjalankan server.py terlebih dahulu sebelum menjalankan client.py.
 Aplikasi ini menggunakan protokol UDP, yang berarti tidak ada jaminan pengiriman atau urutan pesan yang tepat. Hal ini sesuai untuk chatroom sederhana tetapi mungkin tidak cocok untuk aplikasi yang membutuhkan reliabilitas tinggi.
