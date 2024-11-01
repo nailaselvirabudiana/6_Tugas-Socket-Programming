@@ -16,11 +16,11 @@ Jaringan lokal (LAN) atau konfigurasi jaringan yang memungkinkan klien dan serve
    - Server akan mulai mendengarkan pesan dari klien pada alamat IP dan port yang ditentukan di dalam script.
 
    Fungsi Utama
-   Menerima Pesan: Server akan menerima pesan dari setiap klien yang terhubung.
-   Broadcast Pesan: Pesan yang diterima dari klien akan dicatat dan disiarkan ke semua klien lain yang aktif.
-   Log dan Hapus Klien: Jika klien mengirimkan pesan "exit", server akan mencatat pemutusan dan menghapus klien dari daftar.
+   - Menerima Pesan: Server akan menerima pesan dari setiap klien yang terhubung.
+   - Broadcast Pesan: Pesan yang diterima dari klien akan dicatat dan disiarkan ke semua klien lain yang aktif.
+   - Log dan Hapus Klien: Jika klien mengirimkan pesan "exit", server akan mencatat pemutusan dan menghapus klien dari daftar.
 
-2. Client:
+3. Client:
 
    Langkah-Langkah Menjalankan Klien
    - Buka terminal.
@@ -29,9 +29,9 @@ Jaringan lokal (LAN) atau konfigurasi jaringan yang memungkinkan klien dan serve
    - Setelah terhubung, _client_ dapat mengirim pesan yang akan disiarkan ke _client_ lain yang terhubung ke _server_ yang sama.
    - Jika _client_ mengirim pesan "exit", _client_ akan memutuskan koneksi dari _server_.
 
-    Fungsi Utama
-    Kirim dan Terima Pesan: Klien dapat mengirim pesan ke server, yang kemudian akan menyiarkan pesan tersebut ke klien lain.
-    Keluar dari Chat: Klien dapat keluar dari chat dengan mengirim pesan "exit". Server akan mencatat pemutusan dan menghapus klien dari daftar aktif.
+   Fungsi Utama
+   - Kirim dan Terima Pesan: Klien dapat mengirim pesan ke server, yang kemudian akan menyiarkan pesan tersebut ke klien lain.
+   - Keluar dari Chat: Klien dapat keluar dari chat dengan mengirim pesan "exit". Server akan mencatat pemutusan dan menghapus klien dari daftar aktif.
 
 # Struktur Kode
 server.py: Mengatur fungsi server untuk menerima dan menyiarkan pesan serta menangani pemutusan koneksi.
